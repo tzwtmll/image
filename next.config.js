@@ -1,4 +1,5 @@
 module.exports = {
+  output: "export",
   basePath: "/image",
   images: {
     formats: ["image/avif", "image/webp"],
