@@ -55,23 +55,26 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               <span className="flex max-h-full max-w-full items-center justify-center">
                 <Bridge />
               </span>
-              <span className="absolute left-0 right-0 bottom-0 h-[400px] bg-gradient-to-b from-black/0 via-black to-black"></span>
+              <span className="absolute bottom-0 left-0 right-0 h-[400px] bg-gradient-to-b from-black/0 via-black to-black"></span>
             </div>
             <Logo />
-            <h1 className="mt-8 mb-4 text-base font-bold uppercase tracking-widest">
-              2022 Event Photos
+            <h1 className="mb-4 mt-8 text-base font-bold uppercase tracking-widest">
+              2023 Create Album
             </h1>
-            <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              Our incredible Next.js community got together in San Francisco for
-              our first ever in-person conference!
+            <p
+              className="max-w-[40ch] text-white/75 sm:max-w-[32ch]"
+              style={{ fontSize: "15px" }}
+            >
+              喜欢摄影 平时的一些随拍和一些漫展拍摄 后续会持续更新
+              如果Album中的照片涉及到本人想删除照片 或者你想拥有一个相册网站
+              联系我
             </p>
             <a
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
-              href="https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-cloudinary&project-name=nextjs-image-gallery&repository-name=with-cloudinary&env=NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,CLOUDINARY_API_KEY,CLOUDINARY_API_SECRET,CLOUDINARY_FOLDER&envDescription=API%20Keys%20from%20Cloudinary%20needed%20to%20run%20this%20application"
-              target="_blank"
-              rel="noreferrer"
+              style={{ cursor: "pointer" }}
+              href="https://github.com/tzwtmll"
             >
-              Clone and Deploy
+              Content Me
             </a>
           </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
